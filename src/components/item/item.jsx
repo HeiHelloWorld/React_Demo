@@ -11,7 +11,7 @@ export default class Item extends Component {
   }
 
   deleteComment = ()=>{
-    if(window.config('确定删除该评论吗？')){
+    if(window.confirm('确定删除该评论吗？')){
       this.props.deleteComment(this.props.index)
     }
   }

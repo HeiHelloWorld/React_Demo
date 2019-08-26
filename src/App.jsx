@@ -15,14 +15,14 @@ export default class App extends Component{
   addComment = (comment) => {
     const { comments } = this.state
     this.setState({
-      comments:[comment,...comments]
+      comments: [comment, ...comments]
     })
   }
 
   deleteComment = (index) => {
     const { comments } = this.state
     this.setState({
-      comments:comments.filter((c,i) => i!=index)
+      comments:comments.filter((c,i) => i!==index)
     })
   }
 
@@ -40,7 +40,7 @@ export default class App extends Component{
           </div>
         </header>
         <div className="container">
-          <Add addcomment={this.addcomment} />
+          <Add addComment={this.addComment} />
           <List comments={comments} deleteComment={this.deleteComment} />
         </div>
       </div>

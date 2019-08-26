@@ -16,7 +16,7 @@ export default class Add extends Component {
     }
 
     const comment = {
-      id : Date.now(),
+      id: Date.now(),
       username,
       content
     }
@@ -32,7 +32,7 @@ export default class Add extends Component {
         <form className="form-horizontal">
           <div className="form-group">
             <label>用户名</label>
-            <input type="text" className="form-control" placeholder="用户名" ref="username"/>
+            <input type="text" className="form-control" placeholder="用户名" ref="username" />
           </div>
           <div className="form-group">
             <label>评论内容</label>
